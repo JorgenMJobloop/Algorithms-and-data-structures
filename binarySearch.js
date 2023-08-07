@@ -2,10 +2,10 @@
   assigns arr & target as parameters, functions contains the variables low, high & middle all within their respective scopes.
   
 */
-var arr = new Array();
+let arr = new Array();
 function binarySearchAlgorithm(arr, target) {
-    var low = 0;
-    var high = arr.length - 1;
+    let low = 0;
+    let high = arr.length - 1;
     while (low <= high) {
         var middle = Math.floor(low + high / 2);
         if (arr[middle] === target) {

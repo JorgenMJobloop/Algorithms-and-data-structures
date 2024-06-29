@@ -18,7 +18,6 @@ int main() {
 
     quickSort(newArray, 0, arraySize - 1);
 
-    // Skriv ut den sorterte arrayen
     std::cout << "Sorted array: ";
     for (int i = 0; i < arraySize; i++) {
         std::cout << newArray[i] << " ";

@@ -44,8 +44,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-        - language: cpp
-          build-mode: autobuild
+        - language: c-cpp
+          build-mode: manual
         - language: java-kotlin
           build-mode: none # This mode only analyzes Java. Set this to 'autobuild' or 'manual' to analyze Kotlin too.
         - language: javascript-typescript
@@ -91,9 +91,11 @@ jobs:
           'your code, for example:'
         echo '  make bootstrap'
         echo '  make release'
+        echo '  make .
         exit 1
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
+        name: codeql/cpp-examples

@@ -1,0 +1,5 @@
+Current size of sorted array: 32
+Current size of unsorted random array: 85
+26
+x found at index: 26
+x found in a random pool at index: 42

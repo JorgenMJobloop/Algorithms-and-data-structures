@@ -28,7 +28,8 @@ public class Main {
         Arrays.sort(randomArray);
 
         if (binarySearchMethod(randomArray, y) == -1) {
-            System.out.println("Binary search algorithm returns -1, we can deduce from this, that algorithm failed!");
+            System.out
+                    .println("Binary search algorithm returns -1, we can deduce from this, that the algorithm failed!");
         }
 
         System.out.println(binarySearchMethod(array, x));
@@ -36,6 +37,7 @@ public class Main {
         System.out.println("x found at index: " + binarySearchMethod((array), x));
 
         System.out.println("x found in a random pool at index: " + binarySearchMethod(randomArray, y));
+
     }
 
     public static int binarySearchMethod(int[] array, int x) {

@@ -10,17 +10,27 @@ public class Main {
                 26,
                 27, 28, 29, 30 };
 
+        System.out.println("Current size of sorted array: " + array.length);
+
         int lenght = 85;
         int[] randomArray = createRandomIntegerArray(lenght);
-
-        System.out.println(randomArray.clone().toString());
+        System.out.println("Current size of unsorted random array: " + randomArray.length);
 
         Arrays.sort(array);
 
         int x = 25;
 
         int y = 15;
+
+        // System.out.println("Test the binary search implementation without sorting the
+        // random array");
+
         Arrays.sort(randomArray);
+
+        if (binarySearchMethod(randomArray, y) == -1) {
+            System.out.println("Binary search algorithm returns -1, we can deduce from this, that algorithm failed!");
+        }
+
         System.out.println(binarySearchMethod(array, x));
 
         System.out.println("x found at index: " + binarySearchMethod((array), x));

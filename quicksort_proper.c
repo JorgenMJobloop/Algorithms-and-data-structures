@@ -22,10 +22,11 @@ int main()
     // allocating memory to newArray
     newArray = (int *)malloc(arraySize * sizeof(int));
     // basic NULL check, to see that the Array is NOT NULL, if it is NULL, we crash the program and return error code 1
-    if (newArray == NULL && sizeof(newArray) >= max_sized_integer)
+    if (newArray == NULL || sizeof(newArray) >= max_sized_integer)
     {
         printf("Error! Exiting..");
-        return 1;
+        exit(1);
+        // return 1;
     }
     // basic test using rand() to populate the array with random numbers rather than incrementing numbers
     printf("Testing a implementation of rand() to populate a new array of size n, that is randomized, rather than sorted in ascending order.\n");

@@ -2,8 +2,8 @@ import java.lang.*;
 
 public class Sequence {
     public static void main(String[] args) {
-        String[] word = { "H", "e", "l", "l", "o" };
-        String find = "e";
+        String[] word = { "h", "e", "l", "l", "o" };
+        String find = "o";
         Sequential(word, find);
     }
 

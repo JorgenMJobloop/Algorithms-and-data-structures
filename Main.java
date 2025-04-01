@@ -12,8 +12,10 @@ public class Main {
 
         System.out.println("Current size of sorted array: " + array.length);
 
-        int lenght = 85;
+        int lenght = 128;
+
         int[] randomArray = createRandomIntegerArray(lenght);
+
         System.out.println("Current size of unsorted random array: " + randomArray.length);
 
         Arrays.sort(array);
@@ -38,6 +40,8 @@ public class Main {
 
         System.out.println("x found in a random pool at index: " + binarySearchMethod(randomArray, y));
 
+        System.out.println("Factorial 5 = " + Recursive(5)); // output from the recursive function, expected output: 120
+
     }
 
     public static int binarySearchMethod(int[] array, int x) {
@@ -59,6 +63,13 @@ public class Main {
         }
 
         return -1;
+    }
+
+    public static int Recursive(int n) {
+        if (n <= 0) {
+            return 1;
+        }
+        return n * Recursive(n - 1);
     }
 
     public static int[] createRandomIntegerArray(int lenght) {

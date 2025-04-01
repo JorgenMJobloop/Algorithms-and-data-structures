@@ -28,13 +28,14 @@ int main()
         exit(1);
         // return 1;
     }
+
     // basic test using rand() to populate the array with random numbers rather than incrementing numbers
     printf("Testing a implementation of rand() to populate a new array of size n, that is randomized, rather than sorted in ascending order.\n");
     // Populate the array with values
     for (int i = 0; i < arraySize; i++)
     {
         // random value order
-        // newArray[i] = (i * r) * 2;
+        // newArray[i] = (i) + (r) * 2;
         // sorted order
         newArray[i] = i * 2;
     }
@@ -54,6 +55,7 @@ int main()
     {
         printf("%d ", newArray[i]);
     }
+
     printf("\n");
 
     // print the memory address of the pointer

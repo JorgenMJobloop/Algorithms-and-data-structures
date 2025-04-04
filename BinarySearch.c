@@ -5,6 +5,7 @@
 int binary_search(int arr[], int x)
 {
     int left = 0;
+    // size_t len = sizeof(arr[0]) / sizeof(arr[1]); // bad, dont use!
     int length = 10;
     int right = length - 1;
 

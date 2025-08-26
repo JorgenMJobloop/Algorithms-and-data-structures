@@ -22,7 +22,7 @@ jobs:
 
     - name: Build C and C++ programs
       run: |
-        echo "Building using GCC" | gcc *.c -o c_program
+        echo "Building using GCC" | gcc BinarySearch.c -o c_program
         echo "Building using G++" | g++ *.cc -o cpp_program
 
     - name: Run C program

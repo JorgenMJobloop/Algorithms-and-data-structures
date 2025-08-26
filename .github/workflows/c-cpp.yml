@@ -36,4 +36,5 @@ jobs:
         echo "5" | ./cpp_program
 
     - name: Clean up
-      run: make clean
+      run: |
+        echo "Cleaning up" | rm -rf *.out

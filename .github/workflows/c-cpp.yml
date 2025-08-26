@@ -21,7 +21,7 @@ jobs:
       run: sudo apt-get install build-essential
 
     - name: Build C and C++ programs
-      run: make all
+      run: make .
 
     - name: Run C program
       run: |

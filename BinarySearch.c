@@ -46,7 +46,8 @@ void calculate_length(int arr[], size_t length)
     if (length == MAX_SIZE)
     {
         fprintf("The length of the array exceeded the maximum allowed size!\nTerminating program.", stdout);
-        return -1;
+        exit(EXIT_FAILURE);
+        // Removed return statement called in void function, and rather call upon exit() with the proper exit code.
     }
     printf("Length of the array: %zu\n", length);
 }

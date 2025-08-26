@@ -21,7 +21,9 @@ jobs:
       run: sudo apt-get install build-essential
 
     - name: Build C and C++ programs
-      run: make 
+      run: |
+        echo "Building using GCC" | gcc *.c -o c_program
+        echo "Building using G++" | g++ *.cc -o cpp_program
 
     - name: Run C program
       run: |
